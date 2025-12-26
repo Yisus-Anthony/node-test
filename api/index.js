@@ -6,7 +6,7 @@ export default function handler(req, res) {
     <html lang="es">
     <head>
       <meta charset="UTF-8" />
-      <title>Node Test</title>
+      <title>Dominio</title>
       <style>
         body {
           margin: 0;
@@ -40,8 +40,8 @@ export default function handler(req, res) {
     </head>
     <body>
       <div class="card">
-        <h1>🚀 Node.js funcionando</h1>
-        <p>Backend simple desplegado en Vercel</p>
+        <h1>Bienvenidos a mi pagina</h1>
+        <p>Compren ahora</p>
         <small>${new Date().toLocaleString()}</small>
       </div>
     </body>
