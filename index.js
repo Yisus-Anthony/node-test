@@ -1,3 +1,6 @@
 export default function handler(req, res) {
-  res.status(200).send("Hola 👋 Node funcionando en Vercel");
+  res.status(200).json({
+    message: "Node funcionando en Vercel",
+    status: "ok"
+  });
 }
