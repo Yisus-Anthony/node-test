@@ -1,10 +1,3 @@
-const http = require("http");
-
-const server = http.createServer((req, res) => {
-  res.writeHead(200, { "Content-Type": "text/plain" });
-  res.end("Hola, el servidor Node funciona");
-});
-
-server.listen(3000, () => {
-  console.log("Servidor corriendo en http://localhost:3000");
-});
+export default function handler(req, res) {
+  res.status(200).send("Hola 👋 Node funcionando en Vercel");
+}
