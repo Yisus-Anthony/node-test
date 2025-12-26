@@ -23,3 +23,11 @@ button {
   border-radius: 8px;
   cursor: pointer;
 }
+
+.section {
+  margin-top: 100vh;
+  padding: 40px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 16px;
+  text-align: center;
+}
