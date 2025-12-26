@@ -1,5 +1,13 @@
-async function loadApi() {
+
+async function goToApi() {
+  // bajar a la sección
+  document.getElementById("api-section")
+    .scrollIntoView({ behavior: "smooth" });
+
+  // llamar a la API
   const res = await fetch("/api");
   const data = await res.json();
-  document.getElementById("status").textContent = data.message;
+
+  document.getElementById("api-result").textContent =
+    data.message;
 }
