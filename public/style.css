@@ -31,3 +31,7 @@ button {
   border-radius: 16px;
   text-align: center;
 }
+
+#api-section {
+  display: none;
+}
