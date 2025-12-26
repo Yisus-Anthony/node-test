@@ -1,50 +1,6 @@
 export default function handler(req, res) {
-  res.setHeader("Content-Type", "text/html");
-
-  res.status(200).send(`
-    <!DOCTYPE html>
-    <html lang="es">
-    <head>
-      <meta charset="UTF-8" />
-      <title>Dominio</title>
-      <style>
-        body {
-          margin: 0;
-          font-family: system-ui, sans-serif;
-          background: linear-gradient(135deg, #667eea, #764ba2);
-          height: 100vh;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: white;
-        }
-        .card {
-          background: rgba(0, 0, 0, 0.3);
-          padding: 40px;
-          border-radius: 16px;
-          text-align: center;
-          box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-        }
-        h1 {
-          margin-bottom: 10px;
-        }
-        p {
-          opacity: 0.9;
-        }
-        small {
-          display: block;
-          margin-top: 20px;
-          opacity: 0.6;
-        }
-      </style>
-    </head>
-    <body>
-      <div class="card">
-        <h1>Bienvenidos a mi pagina</h1>
-        <p>Compren ahora</p>
-        <small>${new Date().toLocaleString()}</small>
-      </div>
-    </body>
-    </html>
-  `);
+  res.status(200).json({
+    message: "API funcionando correctamente",
+    status: "ok"
+  });
 }
